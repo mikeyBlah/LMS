@@ -6,9 +6,17 @@
 body{
   background: #333;
 }
+h1{
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  padding: 20px 0;
+}
 #root{
+  width: 100%;
+}
+#pageWrap{
+  width: 70%;
   margin: 0 auto;
-  width: 80%;
 }
 .card{
   display: flex;
@@ -21,10 +29,10 @@ body{
     background: #666;
 }
 .teamName{
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Lato', sans-serif;
 }
 .pPoints{
-  font-size: 20px;
+  font-size: 14px;
   font-family: 'Lato', sans-serif;
 }
