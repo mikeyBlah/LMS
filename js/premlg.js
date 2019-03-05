@@ -26,18 +26,58 @@
     const card = document.createElement('div');
     card.setAttribute('class', 'card');
 
+    const pPosition = document.createElement('p');
+    pPosition.setAttribute('class', 'tableItem');
+    pPosition.textContent = standings.position;
+
     const pteam = document.createElement('p');
-    pteam.setAttribute('class', 'teamName');
+    pteam.setAttribute('class', 'tableItem');
     pteam.textContent = standings.team_name;
 
-    const ppoints = document.createElement('p');
-    ppoints.setAttribute('class', 'pPoints');
-    ppoints.textContent = standings.points;
+    const matchesPlayed = document.createElement('p');
+    matchesPlayed.setAttribute('class', 'tableItem');
+    matchesPlayed.textContent = standings.overall_gp;
+
+    const matchesWon = document.createElement('p');
+    matchesWon.setAttribute('class', 'tableItem');
+    matchesWon.textContent = standings.overall_w;
+
+    const matchesDrawn = document.createElement('p');
+    matchesDrawn.setAttribute('class', 'tableItem');
+    matchesDrawn.textContent = standings.overall_d;
+
+    const matchesLost = document.createElement('p');
+    matchesLost.setAttribute('class', 'tableItem');
+    matchesLost.textContent = standings.overall_l;
+
+    const goalsFor = document.createElement('p');
+    goalsFor.setAttribute('class', 'tableItem');
+    goalsFor.textContent = standings.overall_gs;
+
+    const goalsAgainst = document.createElement('p');
+    goalsAgainst.setAttribute('class', 'tableItem');
+    goalsAgainst.textContent = standings.overall_ga;
+
+    const goalDiff = document.createElement('p');
+    goalDiff.setAttribute('class', 'tableItem');
+    goalDiff.textContent = standings.gd;
+
+    const pPoints = document.createElement('p');
+    pPoints.setAttribute('class', 'tableItem');
+    pPoints.textContent = standings.points;
 
       container.appendChild(card);
+      card.appendChild(pPosition);
       card.appendChild(pteam);
-      card.appendChild(ppoints);
-  // Log each movie's title
+      card.appendChild(matchesPlayed);
+      card.appendChild(matchesWon);
+      card.appendChild(matchesDrawn);
+      card.appendChild(matchesLost);
+      card.appendChild(goalsFor);
+      card.appendChild(goalsAgainst);
+      card.appendChild(goalDiff);
+      card.appendChild(pPoints);
+  // Log each team
   console.log(standings.team_name);
 });
 } else{

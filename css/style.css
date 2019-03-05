@@ -22,17 +22,30 @@ h1{
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   border-bottom: 2px solid #999;
+}
+.tableHeaderCont{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: 600;
+  border-bottom: 2px solid #999;
+  font-family: 'Lato', sans-serif;
 }
 .card:nth-child(even) {
     background: #666;
 }
-.teamName{
+.tableItem{
   font-size: 18px;
   font-family: 'Lato', sans-serif;
+  width: 10%;
+  text-align: left;
 }
-.pPoints{
-  font-size: 14px;
-  font-family: 'Lato', sans-serif;
+.headerP{
+  width: 10%;
+  text-align: left;
 }
