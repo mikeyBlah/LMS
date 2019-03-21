@@ -1,22 +1,24 @@
+
+@import "https://fonts.googleapis.com/css?family=Lato";
+
 *{
-  color: #FFF;
+  color: #333;
   padding: 0;
   margin: 0;
 }
 body{
-  background: #333;
+  background: #FAFAFA;
 }
 h1{
-  font-size: 22px;
+  font-size: 1rem;
   font-family: 'Lato', sans-serif;
   padding: 20px 0;
-}
-#root{
-  width: 100%;
 }
 #pageWrap{
   width: 70%;
   margin: 0 auto;
+}
+#root{
 }
 .card{
   display: flex;
@@ -24,7 +26,7 @@ h1{
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 2px solid #999;
+  border-bottom: 1px solid #999;
 }
 .tableHeaderCont{
   display: flex;
@@ -32,20 +34,76 @@ h1{
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  font-weight: 600;
-  border-bottom: 2px solid #999;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-bottom: 1px solid #999;
   font-family: 'Lato', sans-serif;
+  background: #186c92;
 }
 .card:nth-child(even) {
-    background: #666;
+    background: #EEE;
 }
 .tableItem{
-  font-size: 18px;
+  font-size: 0.8rem;
   font-family: 'Lato', sans-serif;
-  width: 10%;
+  width: 8%;
+  text-align: left;
+}
+.tableClub{
+  font-size: 0.8rem;
+  font-family: 'Lato', sans-serif;
+  width: 28%;
   text-align: left;
 }
 .headerP{
-  width: 10%;
+  width: 8%;
   text-align: left;
+  color: #FAFAFA;
+}
+.headerClub{
+  width: 28%;
+  text-align: left;
+  color: #FAFAFA;
+}
+#fixCont{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fixtureCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #999;
+  border-radius: 5px;
+  width: 36%;
+  flex-grow: 1;
+  margin: 5px;
+  height: 80px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+}
+.fixHead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  background: #186c92;
+  color: #FAFAFA;
+}
+.fixMain{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.fixtureTeam{
+  padding: 20px;
+}
+.teamBadge{
+  width: 50px;
+  height: 50px;
 }

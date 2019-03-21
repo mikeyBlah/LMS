@@ -31,7 +31,7 @@
     pPosition.textContent = standings.position;
 
     const pteam = document.createElement('p');
-    pteam.setAttribute('class', 'tableItem');
+    pteam.setAttribute('class', 'tableClub');
     pteam.textContent = standings.team_name;
 
     const matchesPlayed = document.createElement('p');

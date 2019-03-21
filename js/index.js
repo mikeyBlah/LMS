@@ -5,7 +5,8 @@ const createScript = (js) => {
 };
 
 const loadScripts = () => [
-  'premlg'
+  'premlg',
+  'fixtures'
 ].forEach(createScript);
 
 window.onload = loadScripts;
