@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700');
+
+.loginPanelContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #DDDDDD;
+  width: 30%;
+  height: 100vh;
+  align-self: flex-end;
+  background: #186c92;
+  text-align: center;
+}
+.logoText{
+  font: 600 2rem 'Oswald', sans-serif;
+  color: #FAFAFA;
+  letter-spacing: 2px;
+}
+#trophyLogo{
+  height: 200px;
+  width: 200px;
+}
